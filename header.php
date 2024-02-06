@@ -39,7 +39,7 @@ require_once 'config.php';
     <!--right align-->
     <div class="d-flex">
       
-      <a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button">CONNEXION</a>
+      <a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button">Login</a>
       <a class="btn btn-dark m-1" href="/views/backend/security/signup.php" role="button">Sign up</a>
       <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Rechercher sur le site…" aria-label="Search" >
