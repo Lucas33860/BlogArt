@@ -57,8 +57,8 @@ include '../../header.php';
                         <tr>
                             <td>Thématiques</td>
                             <td>
-                                <a href="/views/backend/thematiques/list.php" class="btn btn-primary disabled">List</a>
-                                <a href="/views/backend/thematiques/create.php" class="btn btn-success disabled">Create</a>
+                                <a href="/views/backend/thematiques/list.php" class="btn btn-primary ">List</a>
+                                <a href="/views/backend/thematiques/create.php" class="btn btn-success ">Create</a>
                                 <a href="/views/backend/thematiques/edit.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/thematiques/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
@@ -87,8 +87,8 @@ include '../../header.php';
                         <tr>
                             <td>Mot-clés</td>
                             <td>
-                                <a href="/views/backend/keywords/list.php" class="btn btn-primary disabled">List</a>
-                                <a href="/views/backend/keywords/create.php" class="btn btn-success disabled">Create</a>
+                                <a href="/views/backend/keywords/list.php" class="btn btn-primary ">List</a>
+                                <a href="/views/backend/keywords/create.php" class="btn btn-success ">Create</a>
                                 <a href="/views/backend/keywords/edit.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/keywords/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
