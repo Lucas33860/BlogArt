@@ -14,7 +14,7 @@ function sql_update($table, $attributs, $where) {
         //prepare query for PDO
         $query = "UPDATE $table SET $attributs WHERE $where;";
         $request = $DB->prepare($query);
-        $request->execute([$attributs]);
+        $request->execute();
         $DB->commit();
         $request->closeCursor();
     }

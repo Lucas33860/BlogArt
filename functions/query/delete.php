@@ -14,7 +14,7 @@ function sql_delete($table, $where){
         //prepare query for PDO
         $query = "DELETE FROM $table WHERE $where;";
         $request = $DB->prepare($query);
-        $request->execute([$where]);
+        $request->execute();
         $DB->commit();
         $request->closeCursor();
     }

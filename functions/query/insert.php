@@ -14,7 +14,7 @@ function sql_insert($table, $attributs, $values){
         //prepare query for PDO
         $query = "INSERT INTO $table ($attributs) VALUES ($values);";
         $request = $DB->prepare($query);
-        $request->execute([$values]);
+        $request->execute();
         $DB->commit();
         $request->closeCursor();
     }
