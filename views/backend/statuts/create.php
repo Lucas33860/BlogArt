@@ -2,7 +2,6 @@
 include '../../../header.php';
 ?>
 
-<!-- Bootstrap form to create a new statut -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
