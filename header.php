@@ -17,27 +17,33 @@ require_once 'config.php';
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Blog'Art 24</a>
+    <a class="navbar-brand" href="#">
+    <img src="/src/images/LogoBlack.svg" alt="Logo" width="50" height="35" class="d-inline-block align-text-top">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/views/backend/dashboard.php">Admin</a>
+          <a class="nav-link" href="/views/backend/dashboard.php">ARTICLES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
         </li>
       </ul>
     </div>
     <!--right align-->
     <div class="d-flex">
-      <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Rechercher sur le site…" aria-label="Search" >
-      </form>
-      <a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button">Login</a>
+      
+      <a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button">CONNEXION</a>
       <a class="btn btn-dark m-1" href="/views/backend/security/signup.php" role="button">Sign up</a>
+      <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Rechercher sur le site…" aria-label="Search" >
+      </form>
     </div>
   </div>
 </nav>
