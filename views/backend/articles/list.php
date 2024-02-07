@@ -1,14 +1,7 @@
 <?php
 include '../../../header.php'; // contains the header and call to config.php
 
-$articles = sql_select("ARTICLE INNER JOIN motclearticle ON article.numArt = motclearticle.numArt
-INNER JOIN motcle ON motclearticle.numMotCle = motcle.numMotCle
-INNER JOIN thematique ON article.numThem = thematique.numThem
-GROUP BY article.numArt;
-", "  article.libTitrArt  ,article.numArt, article.dtCreaArt, article.libChapoArt, article.libAccrochArt, GROUP_CONCAT(motcle.libMotCle) AS mots_cle, thematique.libThem");?>
-
-
-
+$articles = sql_select("ARTICLE INNER JOIN thematique ON article.numThem = thematique.numThem", "libTitrArt, article.numArt, dtCreaArt, libChapoArt, libAccrochArt, libThem", null, "article.numArt ASC");?>
 
 <div class="container">
     <div class="row">
