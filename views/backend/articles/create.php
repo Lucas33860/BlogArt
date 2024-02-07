@@ -26,33 +26,40 @@ include '../../../header.php';
                     <label for="libChapoArt">Chapô</label>
                     <input id="libChapoArt" name="libChapoArt" class="form-control" type="text" autofocus="autofocus" />
 
-                    <label for="libSs1Titr1Art">Titre 1</label>
-                    <input id="libSs1Titr1Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
-
                     <label for="parag1Art">Paragraphe 1</label>
                     <input id="parag1Art" name="parag1Art" class="form-control" type="text" autofocus="autofocus" />
 
-                    <label for="libSs2Titr2Art">Titre 2</label>
-                    <input id="libSs2Titr2Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
+
+                    <label for="libSs1Titr1Art">Titre 1</label>
+                    <input id="libSs1Titr1Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
 
                     <label for="parag2Art">Paragraphe 2</label>
                     <input id="parag2Art" name="parag2Art" class="form-control" type="text" autofocus="autofocus" />
 
-                    <label for="libSs3Titr3Art">Titre 3</label>
-                    <input id="libSs3Titr3Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
+
+                    <label for="libSs2Titr2Art">Titre 2</label>
+                    <input id="libSs2Titr2Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
 
                     <label for="parag3Art">Paragraphe 3</label>
                     <input id="parag3Art" name="parag2Art" class="form-control" type="text" autofocus="autofocus" />
 
+
+                    <label for="libSs3Titr3Art">Titre 2</label>
+                    <input id="libSs3Titr3Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
+
+
                     <label for="libConclArt">Conclusion</label>
                     <input id="libConclArt" name="libConclArt" class="form-control" type="text" autofocus="autofocus" />
+
 
                     <label for="urlPhotArt">URL Photo</label>
                     <input id="urlPhotArt" name="urlPhotArt" class="form-control" type="text" autofocus="autofocus" />
 
-                    <label for="numThem">Thématique</label>
-                    <input id="numThem" name="numThem" class="form-control" type="text" autofocus="autofocus" />
+                    <label for="libThem">Thématique</label>
+                    <input id="libThem" name="libThem" class="form-control" type="text" autofocus="autofocus" />
 
+                    
+                    
                 </div>
                 <br />
                 <div class="form-group mt-2">
@@ -62,3 +69,6 @@ include '../../../header.php';
         </div>
     </div>
 </div>
+
+
+                
