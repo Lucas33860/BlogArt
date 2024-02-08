@@ -31,17 +31,17 @@
 					<div class="row">
 						<div class="col text-end">
 						<ul>
-						<li class = "li_footer"><a href="Articles.php" class = "p_footer">Articles</a></li>
+						<li class = "li_footer"><a href="#article" class = "p_footer">Articles</a></li>
 						<li class = "li_footer"><a href="contact.php" class = "p_footer">Contact</a></li>
-						<li class = "li_footer"><a href="inscription.php" class = "p_footer">Inscription</a></li>
-						<li class = "li_footer"><a href="connexion.php" class = "p_footer">Connexion</a></li>
+						<li class = "li_footer"><a href="views/backend/security/signup.php" class = "p_footer">Inscription</a></li>
+						<li class = "li_footer"><a href="views/backend/security/login.php" class = "p_footer">Connexion</a></li>
 </ul>
 						</div>
 						<div class="col text-end">
 							<ul>
-								<li class = "icones"><a href="..."><img src="/src/images/fb.svg" alt="Logo" width="50" height="50"></a></li>
-								<li class = "icones"><a href="..."><img src="/src/images/Ig.svg" alt="Logo" width="50" height="50"></a></li>
-								<li class = "icones"><a href="..."> <img src="/src/images/Social Icons/YouTube/Negative.svg" alt="Logo" width="50" height="50"></a></li>
+								<li class = "icones"><a href="https://facebook.com/"><img src="/src/images/fb.svg" alt="Logo" width="50" height="50"></a></li>
+								<li class = "icones"><a href="https://www.instagram.com/"><img src="/src/images/Ig.svg" alt="Logo" width="50" height="50"></a></li>
+								<li class = "icones"><a href="https://www.youtube.com/"> <img src="/src/images/Social Icons/YouTube/Negative.svg" alt="Logo" width="50" height="50"></a></li>
 							</ul>
 						</div>
 					</div>

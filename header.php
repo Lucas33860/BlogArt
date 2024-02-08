@@ -37,14 +37,14 @@ session_start();
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
+            <a class="nav-link active" aria-current="page" href="index.php">ACCUEIL</a>
           </li>
           <li class="nav-item">
           
-            <a class="nav-link active" aria-current="page" href="/">ARTICLES</a>
+            <a  class="nav-link active" aria-current="page" href="#article">ARTICLES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">CONTACT</a>
+            <a class="nav-link active" aria-current="page" href="contact.php">CONTACT</a>
           </li>
           <?php 
           if (isset($_SESSION['logged']) && isset($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {

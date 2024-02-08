@@ -116,7 +116,7 @@ sql_connect();
 
     <div class="container">
         <div class="ST text-center"> <!-- sous titre 3-->
-            <h2>LES ARTICLES</h2>
+            <h2 id="article">LES ARTICLES</h2>
         </div>
         <div class="articles">
             <div class="row text-center article1"> <!-- art 1-->
@@ -131,7 +131,7 @@ sql_connect();
                         pour la Saint Valentin ? Et si vous osiez sortir des <br>
                         clichés habituels, pour rendre ce moment unique <br>
                         et inoubliable avec votre moitié.</p>
-                    <a class="btn m-1" href="/views/backend/security/Article1.php" role="button">En savoir plus</a>
+                    <a class="btn m-1" href="article1.php?numArt=1" role="button">En savoir plus</a>
                 </div>
             </div>
             <div class="row text-center article2"> <!-- art 2-->
@@ -141,7 +141,7 @@ sql_connect();
                     <p class="p_art">Aujourd'hui le frère Timothée Lagabrielle nous <br>
                         dévoile les secrets qui habitent le couvent de <br>
                         Bordeaux. Mais qui sont réellement les dominicains ?</p>
-                    <a class="btn m-1" href="/views/backend/security/Article2.php" role="button">En savoir plus</a>
+                    <a class="btn m-1" href="article1.php?numArt=2" role="button">En savoir plus</a>
                 </div>
                 <div class="col">
                     <img src="/src/images/Frr.webp" alt="Photo du frère dominicain Timothée Lagabrielle" width="590" height="323"
