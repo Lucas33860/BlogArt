@@ -4,6 +4,7 @@ require_once '../../functions/ctrlSaisies.php';
 require_once '../../functions/query/select.php';
 
 $dtCreaArt = ctrlSaisies($_POST['dtCreaArt']);
+$dtCreaArt = date('Y-m-d H:i:s');
 $dtMajArt = date('Y-m-d H:i:s');
 $libTitrArt = ctrlSaisies($_POST['libTitrArt']);
 $libChapoArt = ctrlSaisies($_POST['libChapoArt']);
