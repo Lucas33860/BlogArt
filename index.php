@@ -136,7 +136,7 @@ sql_connect();
                     <p class="p_art">Aujourd'hui le frère Timothée Lagabrielle nous <br>
                         dévoile les secrets qui habitent le couvent de <br>
                         Bordeaux. Mais qui sont réellement les dominicains ?</p>
-                    <a class="btn m-1" href="article1.php?numArt=1" role="button">En savoir plus</a>
+                    <a class="btn m-1" href="article1.php?numArt=2" role="button">En savoir plus</a>
                 </div>
                 <div class="col">
                     <img src="/src/images/Bougies.webp" alt="Image article 1" width="590" height="323"
