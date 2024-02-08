@@ -49,7 +49,7 @@
 
 			</div>
 			<div class="ML text-center">
-				<a href="mentions_legales.php" class = "p_MLfooter">Mentions légales</a>
+				<a href="mentions-legales.php" class = "p_MLfooter">Mentions légales</a>
 			</div>
 		</div>
 		</div>
