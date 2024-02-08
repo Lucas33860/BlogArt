@@ -28,7 +28,7 @@ session_start();
 <body>
   <nav class="navbar navbar-expand-lg my-navbar ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.php">
         <img src="/src/images/LogoBlack.svg" alt="Logo" width="55" height="40" class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@ session_start();
           <?php 
           if (isset($_SESSION['logged']) && isset($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {
             echo '<li class="nav-item">
-              <a class="nav-link" href="/views/backend/dashboard.php">admin</a>
+              <a class="nav-link" href="/views/backend/dashboard.php">ADMIN</a>
             </li>';
           }
           ?>

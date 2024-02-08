@@ -21,15 +21,6 @@ sql_connect();
 
 <body>
 
-    <div class= "le_chemin">
-        <nav class="chemin">
-            <ol>
-                <li class="chemin1"><a href="accueil.php">Accueil</a></li>
-                <li class="chemin1"><a href="mentions-legales.php">Mentions légales</a></li>
-            </ol>
-        </nav>
-    </div>
-
     <div class="logo_ML text-center">
         <img src="/src/images/LogoMemoriaBlack.svg" alt="Logo" width="499" height="117">
     </div>
