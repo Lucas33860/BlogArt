@@ -31,7 +31,7 @@
 					<div class="row">
 						<div class="col text-end">
 						<ul>
-						<li class = "li_footer"><a href="Articles.php" class = "p_footer">Articles</a></li>
+						<li class = "li_footer"><a href="#article" class = "p_footer">Articles</a></li>
 						<li class = "li_footer"><a href="contact.php" class = "p_footer">Contact</a></li>
 						<li class = "li_footer"><a href="views/backend/security/signup.php" class = "p_footer">Inscription</a></li>
 						<li class = "li_footer"><a href="views/backend/security/login.php" class = "p_footer">Connexion</a></li>

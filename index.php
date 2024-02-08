@@ -111,7 +111,7 @@ sql_connect();
 
     <div class="container">
         <div class="ST text-center"> <!-- sous titre 3-->
-            <h2>LES ARTICLES</h2>
+            <h2 id="article">LES ARTICLES</h2>
         </div>
         <div class="articles">
             <div class="row text-center article1"> <!-- art 1-->
