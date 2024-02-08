@@ -22,6 +22,7 @@ require_once 'config.php';
 
 
 <?php
+session_start();
 
 if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
   echo '<a class="btn btn-danger m-1" href="/api/security/logout.php" role="button">Déconnexion</a>';
