@@ -25,7 +25,7 @@ $urlPhotArt = $article[0]["urlPhotArt"];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1</title>
+    <title>Article 2</title>
 </head>
 
 <body>

@@ -126,7 +126,7 @@ sql_connect();
                         pour la Saint Valentin ? Et si vous osiez sortir des <br>
                         clichés habituels, pour rendre ce moment unique <br>
                         et inoubliable avec votre moitié.</p>
-                    <a class="btn m-1" href="/views/backend/security/Article1.php" role="button">En savoir plus</a>
+                    <a class="btn m-1" href="article1.php?numArt=1" role="button">En savoir plus</a>
                 </div>
             </div>
             <div class="row text-center article2"> <!-- art 2-->
@@ -136,22 +136,11 @@ sql_connect();
                     <p class="p_art">Aujourd'hui le frère Timothée Lagabrielle nous <br>
                         dévoile les secrets qui habitent le couvent de <br>
                         Bordeaux. Mais qui sont réellement les dominicains ?</p>
-                    <a class="btn m-1" href="/views/backend/security/Article1.php" role="button">En savoir plus</a>
+                    <a class="btn m-1" href="article1.php?numArt=1" role="button">En savoir plus</a>
                 </div>
                 <div class="col">
                     <img src="/src/images/Bougies.webp" alt="Image article 1" width="590" height="323"
                         class="img_articles">
-                </div>
-            </div>
-            <div class="row text-center article3"> <!-- art 3-->
-                <div class="col">
-                    <img src="/src/images/Bougies.webp" alt="Image article 1" width="590" height="323"
-                        class="img_articles">
-                </div>
-                <div class="col text-end">
-                    <h2 class="h_art">Article 3</h2>
-                    <p class="p_art date">Publié le JJ/MM/AAAA par Memoria</p>
-                    <a class="btn m-1" href="/views/backend/security/Article1.php" role="button">En savoir plus</a>
                 </div>
             </div>
         </div>
