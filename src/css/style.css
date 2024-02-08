@@ -418,3 +418,8 @@ margin: 50px;
     margin : 50px 50px 50px ; 
     margin-bottom: 100px;
 }
+
+#carouselExampleFade {
+    width: 800px;
+    height: 400px;
+    overflow: hidden; }
