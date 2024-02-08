@@ -6,7 +6,7 @@ require_once '../../functions/getExistPseudo.php';
 
 //Fonctionne
 $error = false;
-if (!empty($_POST['nomMemb']) || !empty($_POST['prenomMemb'])) {
+if (!empty($_POST['nomMemb']) && !empty($_POST['prenomMemb'])) {
     $nom = ctrlSaisies($_POST['nomMemb']);
     $prenom = ctrlSaisies($_POST['prenomMemb']);
 }else{
@@ -37,6 +37,7 @@ if (isset($_POST['email1']) && isset($_POST['email2'])) {
 
     if (!preg_match($patternMail, $email1) || !preg_match($patternMail, $email2)) {
         die("Veuillez saisir des adresses email valides.");
+
     }
     
     if ($email1 !== $email2) {
@@ -46,7 +47,6 @@ if (isset($_POST['email1']) && isset($_POST['email2'])) {
 
 }else{
     die("Veuillez saisir des adresses email.");
-
 }
 
 //Fonctionne
@@ -84,7 +84,7 @@ if(isset($_POST['g-recaptcha-response'])){
     $token = $_POST['g-recaptcha-response'];
     $url = 'https://www.google.com/recaptcha/api/siteverify';
     $data = array(
-    'secret' => '6LdQWmopAAAAAFJwZcwJIeIXMggmABmNB26d20wg8',
+    'secret' => '6Lc2ilwpAAAAACYWHf45jUvkNJnCW1KnERoXFQzH',
     'response' => $token
     );
     $options = array(
