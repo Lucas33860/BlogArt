@@ -60,7 +60,7 @@ session_start();
       <div class="d-flex">
         <?php
         if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
-          echo '<a class="btn btn-danger m-1" href="/api/security/logout.php" role="button">Déconnexion</a>';
+          echo '<a class="btn m-1" href="/api/security/logout.php" role="button">Déconnexion</a>';
         } else {
           echo '<a class="btn m-1" href="/views/backend/security/login.php" role="button">Connexion</a>';
         }
