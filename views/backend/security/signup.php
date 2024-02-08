@@ -78,14 +78,14 @@ $statuts = sql_select('STATUT', '*');
                 </div>
                 <br>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Créer un compte</button>
+                    <button type="submit" data-sitekey="6LdDn2spAAAAAOoAFhJy8PbBsnjgAjBO20DDz_r4" data-callback='onSubmit'class="g-recapchat">Créer un compte</button>
                 </div>
                 <br>
                 <p>Vous avez déjà un compte ? <a href=<?php echo $_SERVER['HTTP_REFERER'] ?>>Connectez vous</a></p>
                 
                 <!--Capchat-->
-                <button class="g-recaptcha" data-sitekey="6Lc2ilwpAAAAACxk7rzZjfH-Pj9EgVBpmrfCBPfx" data-callback='onSubmit' data-action='submit'>Submit
-                </button>
+                
+
             </form>
         </div>
     </div>
