@@ -8,60 +8,52 @@ include '../../../header.php';
             <h1>Ajout d'article</h1>
         </div>
         <div class="col-md-12">
-            <!-- Form to create a new statut -->
-            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="numArt">Num Article</label>
-                    <input id="numArt" name="numArt" class="form-control" type="text" autofocus="autofocus" />
-
                     <label for="dtCreaArt">Date création</label>
-                    <input id="dtCreaArt" name="dtCreaArt" class="form-control" type="text" autofocus="autofocus" />
-
-                    <label for="dtMajArt">Date MAJ</label>
-                    <input id="dtMajArt" name="dtMajArt" class="form-control" type="text" autofocus="autofocus" />
+                    <input id="dtCreaArt" name="dtCreaArt" class="form-control" type="date" autofocus="autofocus" required />
 
                     <label for="libTitrArt">Titre</label>
-                    <input id="libTitrArt" name="libTitrArt" class="form-control" type="text" autofocus="autofocus" />
+                    <input id="libTitrArt" name="libTitrArt" class="form-control" type="text" autofocus="autofocus" required />
 
                     <label for="libChapoArt">Chapô</label>
-                    <input id="libChapoArt" name="libChapoArt" class="form-control" type="text" autofocus="autofocus" />
+                    <input id="libChapoArt" name="libChapoArt" class="form-control" type="text" autofocus="autofocus" required />
+
+                    <label for="libAccrochArt">Accroche Article 1 </label>
+                    <input id="libAccrochArt" name="libAccrochArt" class="form-control" type="text" autofocus="autofocus" required />
 
                     <label for="parag1Art">Paragraphe 1</label>
-                    <input id="parag1Art" name="parag1Art" class="form-control" type="text" autofocus="autofocus" />
+                    <input id="parag1Art" name="parag1Art" class="form-control" type="text" autofocus="autofocus" required />
 
-
-                    <label for="libSs1Titr1Art">Titre 1</label>
-                    <input id="libSs1Titr1Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
+                    <label for="libSsTitr1Art">Sous-Titre 1</label>
+                    <input id="libSsTitr1Art" name="libSsTitr1Art" class="form-control" type="text" autofocus="autofocus" required />
 
                     <label for="parag2Art">Paragraphe 2</label>
-                    <input id="parag2Art" name="parag2Art" class="form-control" type="text" autofocus="autofocus" />
+                    <input id="parag2Art" name="parag2Art" class="form-control" type="text" autofocus="autofocus" required />
 
-
-                    <label for="libSs2Titr2Art">Titre 2</label>
-                    <input id="libSs2Titr2Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
+                    <label for="libSsTitr2Art">Sous-Titre 2</label>
+                    <input id="libSsTitr2Art" name="libSsTitr2Art" class="form-control" type="text" autofocus="autofocus" required />
 
                     <label for="parag3Art">Paragraphe 3</label>
-                    <input id="parag3Art" name="parag2Art" class="form-control" type="text" autofocus="autofocus" />
-
-
-                    <label for="libSs3Titr3Art">Titre 2</label>
-                    <input id="libSs3Titr3Art" name="libSs1Titr1Art" class="form-control" type="text" autofocus="autofocus" />
-
+                    <input id="parag3Art" name="parag3Art" class="form-control" type="text" autofocus="autofocus" required />
 
                     <label for="libConclArt">Conclusion</label>
-                    <input id="libConclArt" name="libConclArt" class="form-control" type="text" autofocus="autofocus" />
+                    <input id="libConclArt" name="libConclArt" class="form-control" type="text" autofocus="autofocus" required />
 
+                    <label for="urlPhotArt">Nom Photo</label>
+                    <input id="urlPhotArt" name="urlPhotArt" class="form-control" autofocus="autofocus" type="file" name="image" accept=".jpg, .jpeg, .png, .gif, .webp" required />
 
-                    <label for="urlPhotArt">URL Photo</label>
-                    <input id="urlPhotArt" name="urlPhotArt" class="form-control" type="text" autofocus="autofocus" />
-
-                    <label for="libThem">Thématique</label>
-                    <input id="libThem" name="libThem" class="form-control" type="text" autofocus="autofocus" />
-
-                    
-                    
+                    <label for="numThem">Thématique</label>
+                    <select id="numThem" name="numThem" class="form-control" required>
+                        <?php
+                        $thematiques = sql_select('thematique', 'numThem, libThem');
+                        foreach ($thematiques as $thematique) {
+                            echo '<option value="' . $thematique['numThem'] . '">' . $thematique['libThem'] . '</option>';
+                        }
+                        ?>
+                    </select>
                 </div>
-                <br />
+                <br/>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Confirmer create ?</button>
                 </div>
@@ -69,6 +61,3 @@ include '../../../header.php';
         </div>
     </div>
 </div>
-
-
-                
