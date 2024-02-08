@@ -19,7 +19,7 @@ h3 {
 
 
 nav {
-    border-bottom: 1px solid black;
+    border-bottom: 1% solid black;
 }
 
 
@@ -48,19 +48,19 @@ nav {
     border-radius: 25px;
     height: 40px;
     width: 170px;
-    margin: 4px;
+    margin: 2%;
 }
 
 .slogan {
-    margin-left: 170px;
+    margin-left: 25%;
     font-size: 32px !important;
     font-family: 'Futura-Medium', sans-serif !important;
 }
 
 .rond{
     position: absolute;
-    left: 800px;
-    top: 700px;
+    left: 55%;
+    top: 80%;
 	width:200px;
 	height:200px;
 	background: #A3252F;
@@ -78,7 +78,16 @@ nav {
 	-webkit-border-radius:100px;
 	-moz-border-radius:100px;
 	-o-border-radius:100px;
-	border-radius:0px 200px 0px 0px;
+	border-radius:0px 400px 0px 0px;
+}
+
+.img_accueil .citation {
+    position:absolute;
+    left: 82%;
+    top : 97%;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
 }
 
 .img_vitrail {
@@ -86,18 +95,18 @@ nav {
 }
 
 .logo {
-    margin-top: 200px;
+    margin-top: 17%;
 }
 
 .titre {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 5%;
+    margin-bottom: 8%;
 }
 
 .container2 {
-    margin-top: 50px;
-    padding: 100px;
-    padding-left: 50px;
+    margin-top: 10%;
+    padding: 7%;
+    padding-left: 7%;
     padding-right: 50px;
     background-color: #2B2D42;
 
@@ -107,24 +116,24 @@ nav {
     color: white;
     font-family: "Futura-Bold", sans-serif !important;
     font-size: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 1.5%;
 }
 
 .p_boite {
     color: white;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
-    line-height: 50px;
+    line-height: 250%;
 }
 
 .ST {
-    margin: 80px;
+    margin: 5%;
     font-size: 32px;
     font-family: 'Futura-Bold', sans-serif !important;
 }
 
 .container3 {
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 .img_news {
@@ -133,12 +142,12 @@ nav {
 }
 
 .p_news {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Inter', sans-serif;
-    line-height: 40px;
+    line-height: 200%;
     text-align: start;
-    margin-left: 110px;
-    margin-top: 5px;
+    margin-left: 23%;
+    margin-top: 5%;
 }
 
 
@@ -146,15 +155,15 @@ nav {
     font-size: 24px;
     font-family: 'Futura-Bold', sans-serif !important;
     text-align: start;
-    margin-left: 110px;
-    margin-top: 5px;
+    margin-left: 23%;
+    margin-top: 5%;
 }
 
 
 .container4 {
     background-color: gray;
-    padding: 50px 30px 50px 0px;
-    padding-bottom: 100px;
+    padding: 5%;
+    padding-top: 2%;
 }
 
 .ST {
@@ -163,7 +172,7 @@ nav {
 }
 
 .chiffres {
-    margin-top: 50px;
+    margin-top: 5%;
     font-size: 96px;
     font-family: 'Futura-Medium', sans-serif !important;
 }
@@ -174,15 +183,15 @@ nav {
 }
 
 .article1 {
-    margin-bottom: 200px;
+    margin-bottom: 10%;
 }
 
 .article2 {
-    margin-bottom: 200px;
+    margin-bottom: 10%;
 }
 
 .article3 {
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 .img_articles {
@@ -191,18 +200,18 @@ nav {
 }
 
 .container5 {
-    margin-top: 50px;
-    padding: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 5%;
+    padding: 6%;
+    padding-left: 3%;
+    padding-right: 3%;
     background-color: #2B2D42;
 
 }
 
 .rond2{
     position: absolute;
-    left: 1230px;
-    top: 4130px;
+    left: 85%;
+    top: 465%;
 	width:150px;
 	height:150px;
 	background: #A3252F;
@@ -214,8 +223,8 @@ nav {
 
 .rond3{
     position: absolute;
-    left: 810px;
-    top: 4530px;
+    left: 55%;
+    top: 515%;
 	width:90px;
 	height:90px;
 	background: #A3252F;
@@ -226,47 +235,49 @@ nav {
 }
 
 .titre_boite2 {
-    margin-left: 50px;
+    margin-left: 7%;
     color: white;
     font-family: "Futura-Bold", sans-serif !important;
     font-size: 32px;
-    line-height: 50px;
-    margin-bottom: 10px;
+    line-height: 200%;
+    margin-bottom: 1%;
 }
 
 .p_boite2 {
-    margin-left: 50px;
+    margin-left: 7%;
     color: white;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
-    line-height: 50px;
+    line-height: 250%;
 }
 
 .carou {
-    margin: 50px;
+    margin: 5%;
+    margin-left: 20%;
 }
 
 .h_art {
     font-size: 24px;
     font-family: 'Futura-Bold', sans-serif !important;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 
 .p_art {
     font-size: 24px;
     font-family: 'Inter', sans-serif;
-    line-height: 40px;
+    line-height: 180%;
 }
 
 .date {
     font-size: 20px;
     color: grey; 
-    margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 
 .footer {
     background-color: #2B2D42;
-    padding: 50px;
+    padding: 3%;
+    padding-bottom: 1%;
 }
 
 .slogan_footer {
@@ -293,17 +304,17 @@ nav {
 .li_footer {
     color: white;
     font-family: 'Futura-Medium', sans-serif !important;
-    margin-bottom: 32px;
+    margin-bottom: 10%;
 }
 
 .p_footer {
     color: white;
     font-family: 'Futura-Medium', sans-serif !important;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .icones {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 .img_hautdepage{
@@ -337,46 +348,48 @@ nav {
 }
 
 .le_chemin {
-    margin: 50px;
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
 .logo_memoria {
-    margin: 50px;
+    margin: 5%;
 }
 
 .titre_contact {
-    margin: 50px;
+    margin: 4%;
     font-size: 48px;
     font-family: "Futura-Bold" , sans-serif;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 
 .h3_contact {
     font-size: 32px;
     font-family: "Futura-Bold" , sans-serif; 
-    margin-bottom: 40px;
+    margin-bottom: 10%;
 }
 
 .p_contact {
-    font-size: 32px;
+    font-size: 24px;
     font-family: "Futura-Medium" , sans-serif;
-    margin-bottom: 40px; 
+    margin-bottom: 7%; 
 }
 
 .carte {
-    margin-bottom: 100px;
+    margin-top: 20%;
+    margin-bottom: 30%;
 }
 
 .logo_ML {
-margin: 50px;
+margin: 5%;
 }
 
 .CGU {
-    margin: 50px;
+    margin: 5%;
 }
 
 .ML {
-    margin: 50px;
+    margin: 5%;
 }
 
 .h_ML {
