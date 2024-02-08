@@ -32,8 +32,11 @@ sql_connect();
                     class="d-inline-block align-text-top">
                 <h1 class="slogan">LES EGLISES AUTREMENT</h1>
             </div>
-            <div class="col">
+            <div class="col img_accueil">
                 <img src="/src/images/Vitrail.webp" alt="Image vitrail" width="482" height="667" class="img_vitrail">
+                <div class="citation">
+                Photo de <a href="https://unsplash.com/fr/@dre0316?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andre Hunter</a> sur <a href="https://unsplash.com/fr/photos/bouteille-en-verre-bleu-et-marron-vqoKHmMKgOE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </div>
                 <div class="rond">
                 </div>
             </div>
@@ -66,25 +69,27 @@ sql_connect();
         </div>
         <div class="row text-center justify-content-center">
             <div class="col">
-                <img src="/src/images/Marcel.webp" alt="Image" width="250" height="250" class="img_news">
-                <h2 class="h_news">NEWS 1</h2>
-                <p class="p_news">Lorem ipsum <br>
-                    dolor sit amet <br>
-                    consectetur.</p>
+                <img src="/src/images/News1.webp" alt="Image" width="250" height="250" class="img_news">
+                <h2 class="h_news">Le diocèse de Bordeaux se réorganise</h2>
+                <p class="p_news">Face à la pénurie <br>
+                    de prêtres et la crise <br>
+                    de vocation.</p>
             </div>
             <div class="col">
-                <img src="/src/images/Marcel.webp" alt="Image" width="250" height="250" class="img_news">
-                <h2 class="h_news">NEWS 2</h2>
-                <p class="p_news">Lorem ipsum <br>
-                    dolor sit amet <br>
-                    consectetur.</p>
+                <img src="/src/images/News2.webp" alt="Image" width="250" height="250" class="img_news">
+                <h2 class="h_news">La basilic Saint-Michel</h2>
+                <p class="p_news">Classé au patrimoine <br>
+                    mondiale de l’UNESCO,<br>
+                    liée à son style <br>
+                    gothique flamboyant.</p>
             </div>
             <div class="col">
-                <img src="/src/images/Marcel.webp" alt="Image" width="250" height="250" class="img_news">
-                <h2 class="h_news">NEWS 3</h2>
-                <p class="p_news">Lorem ipsum <br>
-                    dolor sit amet <br>
-                    consectetur.</p>
+                <img src="/src/images/News3.webp" alt="Image" width="250" height="250" class="img_news">
+                <h2 class="h_news">Les murs de la Cathédrale Sainte André</h2>
+                <p class="p_news">Le mariage d’Aliénor <br>
+                    d’Aquitaine et de Louis VII, <br>
+                    le futur roi de France <br>
+                    puis cinq siècles. </p>
             </div>
         </div>
     </div>
@@ -95,15 +100,15 @@ sql_connect();
         </div>
         <div class="row text-center">
             <div class="col chiffres">
-            <div id="value">80</div>
+                <div id="value">80</div>
                 <p class="p_chifrres">chiffres</p>
             </div>
             <div class="col chiffres">
-            <div id="value">1920</div>
+                <div id="value">1920</div>
                 <p class="p_chifrres">chiffres</p>
             </div>
             <div class="col chiffres">
-            <div id="value">65</div>
+                <div id="value">65</div>
                 <p class="p_chifrres">chiffres</p>
             </div>
         </div>
@@ -116,7 +121,7 @@ sql_connect();
         <div class="articles">
             <div class="row text-center article1"> <!-- art 1-->
                 <div class="col ">
-                    <img src="/src/images/Bougies.webp" alt="Image article 1" width="590" height="323"
+                    <img src="/src/images/Bougies.webp" alt="Photos de plusieurs bougies dans le noir" width="590" height="323"
                         class="img_articles">
                 </div>
                 <div class="col text-end">
@@ -136,22 +141,11 @@ sql_connect();
                     <p class="p_art">Aujourd'hui le frère Timothée Lagabrielle nous <br>
                         dévoile les secrets qui habitent le couvent de <br>
                         Bordeaux. Mais qui sont réellement les dominicains ?</p>
-                    <a class="btn m-1" href="/views/backend/security/Article1.php" role="button">En savoir plus</a>
+                    <a class="btn m-1" href="/views/backend/security/Article2.php" role="button">En savoir plus</a>
                 </div>
                 <div class="col">
-                    <img src="/src/images/Bougies.webp" alt="Image article 1" width="590" height="323"
+                    <img src="/src/images/Frr.webp" alt="Photo du frère dominicain Timothée Lagabrielle" width="590" height="323"
                         class="img_articles">
-                </div>
-            </div>
-            <div class="row text-center article3"> <!-- art 3-->
-                <div class="col">
-                    <img src="/src/images/Bougies.webp" alt="Image article 1" width="590" height="323"
-                        class="img_articles">
-                </div>
-                <div class="col text-end">
-                    <h2 class="h_art">Article 3</h2>
-                    <p class="p_art date">Publié le JJ/MM/AAAA par Memoria</p>
-                    <a class="btn m-1" href="/views/backend/security/Article1.php" role="button">En savoir plus</a>
                 </div>
             </div>
         </div>
@@ -176,9 +170,9 @@ sql_connect();
         </div>
 
         <div class="rond2">
-                </div>
-                <div class="rond3">
-                </div>
+        </div>
+        <div class="rond3">
+        </div>
     </div>
     <div class="container6">
         <div class="ST text-center"> <!-- sous titre 4-->
@@ -186,13 +180,13 @@ sql_connect();
             <div id="carouselExampleFade" class="carousel slide carousel-fade carou">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/src/images/Bougies.webp" class="d-block w-100" alt="...">
+                        <img src="/src/images/st-andré.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="/src/images/Vitrail.webp" class="d-block w-100" alt="...">
+                        <img src="/src/images/St-seurin.webp" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="/src/images/Marcel.webp" class="d-block w-100" alt="...">
+                        <img src="/src/images/ste-croix.webp" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"

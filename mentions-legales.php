@@ -147,7 +147,7 @@ sql_connect();
         <div class="container">
             <p class="p_ML"> Nom de l'éditeur : <br>
                 Memoria Adresse : 1 Rue Jacques Ellul, 33800 Bordeaux <br>
-                Téléphone : 06 XX XX XX XX <br>
+                Téléphone : 07 50 23 54 32 <br>
                 E-mail : memoria.support@gmail.com </p>
 
             <h3 class="st_ML">Directeur de la publication : </h3>
@@ -159,7 +159,7 @@ sql_connect();
             <p class="p_ML">Nom de l'hébergeur : SAS OVH   <br>
                 Adresse : 2 rue Kellermann – BP 80157 – 59053 Roubaix Cedex 1 – France  <br>
                 Téléphone : 08 203 203 63 ( 0.118 €/mn) – Fax : + 33 (0) 3 20 20 09 58  <br>
-                Site : : www.ovh.com </p>
+                Site : www.ovh.com </p>
         </div>
 
 
