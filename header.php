@@ -40,11 +40,20 @@ session_start();
             <a class="nav-link active" aria-current="page" href="/">ACCUEIL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/views/backend/dashboard.php">ARTICLES</a>
+          
+            <a class="nav-link active" aria-current="page" href="/">ARTICLES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">CONTACT</a>
           </li>
+          <?php 
+          if (isset($_SESSION['logged']) && isset($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {
+            echo '<li class="nav-item">
+              <a class="nav-link" href="/views/backend/dashboard.php">admin</a>
+            </li>';
+          }
+          ?>
+
         </ul>
       </div>
       <!--right align-->

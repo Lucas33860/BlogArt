@@ -27,6 +27,10 @@ if (get_ExistPseudo($pseudo)){
     } else {
         die("Compte inexistant");
     }
+    $numStat = sql_select("membre", "numStat", "pseudoMemb = '$pseudo'");
+    $numStat = $numStat[0]["numStat"];
+
+    $_SESSION['numStat'] = $numStat;
 }
 
 header('Location: ../../index.php');

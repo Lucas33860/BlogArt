@@ -180,7 +180,6 @@ sql_connect();
                 <div class="rond3">
                 </div>
     </div>
-
     <div class="container6">
         <div class="ST text-center"> <!-- sous titre 4-->
             <h2>LES ÉGLISES DE BORDEAUX</h2>
