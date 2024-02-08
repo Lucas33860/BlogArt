@@ -19,6 +19,7 @@ if(isset($_GET['numArt'])){
                 <div class="form-group">
                     <label for="libTitrArt">Titre de l'article</label>
                     <input id="numArt" name="numArt" class="form-control" style="display: none" type="text" value="<?php echo($numArt); ?>" readonly="readonly" />
+
                     <input id="libTitrArt" name="libTitrArt" class="form-control" type="text" value="<?php echo($libTitrArt); ?>" readonly="readonly" disabled />
                 </div>
                 <br />
