@@ -2,16 +2,16 @@
 <html lang="fr-FR">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog'Art</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog'Art</title>
 
-    <!-- Bootstrap CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-        <!-- Load CSS -->
-    <link rel="stylesheet" href="src/css/style.css"/>
-    <link rel="stylesheet" href="src/css/reset.css"/>
-    <link rel="shortcut icon" type="image/x-icon" href="src/images/article.png" />
+  <!-- Bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <!-- Load CSS -->
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="src/images/article.png" />
   <!-- Captcha -->
   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
@@ -23,12 +23,6 @@ require_once 'config.php';
 
 <?php
 session_start();
-
-if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
-  echo '<a class="btn btn-danger m-1" href="/api/security/logout.php" role="button">Déconnexion</a>';
-} else {
-  echo '<a class="btn m-1" href="/views/backend/security/login.php" role="button">Connexion</a>';
-}
 ?>
 
 <body>
@@ -55,22 +49,17 @@ if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
       </div>
       <!--right align-->
       <div class="d-flex">
-
-        <a class="btn m-1" href="/views/backend/security/login.php" role="button">Connexion</a>
+        <?php
+        if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
+          echo '<a class="btn btn-danger m-1" href="/api/security/logout.php" role="button">Déconnexion</a>';
+        } else {
+          echo '<a class="btn m-1" href="/views/backend/security/login.php" role="button">Connexion</a>';
+        }
+        ?>
         <a class="btn m-1" href="/views/backend/security/signup.php" role="button">Inscription</a>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
         </form>
       </div>
     </div>
-    <!--right align-->
-    <div class="d-flex">
-      
-      <a class="btn m-1" href="/views/backend/security/login.php" role="button">Connexion</a>
-      <a class="btn m-1" href="/views/backend/security/signup.php" role="button">Inscription</a>
-      <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Recherche"  aria-label="Search" >
-      </form>
-    </div>
-  </div>
-</nav>
+  </nav>
