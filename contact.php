@@ -29,13 +29,6 @@ sql_connect();
             class="img_hautdepage">
     </div>
 
-    <div class="le_chemin">
-        <nav class="chemin">
-            <ol>
-                <li class="chemin1"><a href="accueil.php">Accueil</a></li>
-                <li class="chemin1"><a href="contact.php">Contact</a></li>
-            </ol>
-        </nav>
     </div class="logo_memoria">
     <div class="text-end">
         <img src="/src/images/LogoMemoriaBlack.svg" alt="Logo" width="499" height="117">
