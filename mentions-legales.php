@@ -165,11 +165,13 @@ sql_connect();
 
             <h3 class="st_ML">Hébergeur du Site : </h3>
 
-            <p class="p_ML">Nom de l'hébergeur : XXX <br>
-                Adresse : XXX <br>
-                Téléphone : XXX <br>
-                E-mail : XXX</p>
+            <p class="p_ML">Nom de l'hébergeur : SAS OVH   <br>
+                Adresse : 2 rue Kellermann – BP 80157 – 59053 Roubaix Cedex 1 – France  <br>
+                Téléphone : 08 203 203 63 ( 0.118 €/mn) – Fax : + 33 (0) 3 20 20 09 58  <br>
+                Site : : www.ovh.com </p>
         </div>
+
+
 
 
         <div class="container">
