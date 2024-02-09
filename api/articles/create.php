@@ -3,20 +3,20 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 require_once '../../functions/ctrlSaisies.php';
 require_once '../../functions/query/select.php';
 
-$dtCreaArt = ctrlSaisies($_POST['dtCreaArt']);
+$dtCreaArt = addslashes($_POST['dtCreaArt']);
 $dtCreaArt = date('Y-m-d H:i:s');
 $dtMajArt = date('Y-m-d H:i:s');
-$libTitrArt = ctrlSaisies($_POST['libTitrArt']);
-$libChapoArt = ctrlSaisies($_POST['libChapoArt']);
-$libAccrochArt = ctrlSaisies($_POST['libAccrochArt']);
-$parag1Art = ctrlSaisies($_POST['parag1Art']);
-$libSsTitr1Art = ctrlSaisies($_POST['libSsTitr1Art']);
-$parag2Art = isset($_POST['parag2Art']) ? ctrlSaisies($_POST['parag2Art']) : '';
-$libSsTitr2Art = isset($_POST['libSsTitr2Art']) ? ctrlSaisies($_POST['libSsTitr2Art']) : '';
-$parag3Art = isset($_POST['parag3Art']) ? ctrlSaisies($_POST['parag3Art']) : '';
-$libConclArt = ctrlSaisies($_POST['libConclArt']);
+$libTitrArt = addslashes($_POST['libTitrArt']);
+$libChapoArt = addslashes($_POST['libChapoArt']);
+$libAccrochArt = addslashes($_POST['libAccrochArt']);
+$parag1Art = addslashes($_POST['parag1Art']);
+$libSsTitr1Art = addslashes($_POST['libSsTitr1Art']);
+$parag2Art = isset($_POST['parag2Art']) ? addslashes($_POST['parag2Art']) : '';
+$libSsTitr2Art = isset($_POST['libSsTitr2Art']) ? addslashes($_POST['libSsTitr2Art']) : '';
+$parag3Art = isset($_POST['parag3Art']) ? addslashes($_POST['parag3Art']) : '';
+$libConclArt = addslashes($_POST['libConclArt']);
 $urlPhotArt = isset($_FILES['urlPhotArt']) ? $_FILES['urlPhotArt']['name'] : '';
-$numThem = ctrlSaisies($_POST['numThem']);
+$numThem = addslashes($_POST['numThem']);
 
 if(isset($_FILES['urlPhotArt'])){
     $error = $_FILES['urlPhotArt']['error'];
