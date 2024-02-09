@@ -27,7 +27,7 @@ $articles = sql_select("ARTICLE INNER JOIN thematique ON article.numThem = thema
                             <td><?php echo isset($article['libThem']) ? $article['libThem'] : ''; ?></td>
                             <td>
                                 <a href="edit.php?numArt=<?php echo isset($article['numArt']) ? $article['numArt'] : ''; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numArt=<?php echo isset($b['numArt']) ? $article['numArt'] : ''; ?>" class="btn btn-danger">Delete</a>
+                                <a href="delete.php?numArt=<?php echo ($article['numArt']) ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>

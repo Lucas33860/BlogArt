@@ -31,14 +31,11 @@ $urlPhotArt = $article[0]["urlPhotArt"];
 
 <body>
 
-    <!-- je peux rajouter le chemin aussi mais je suis pas sure-->
     <div>
         <img src="/src/images/Cathedral2.webp" alt="Image cathédrale" width="1440px" height="270px"
             class="img_hautdepage">
-        <!--est-ce qu'ici je met une balise php pour que l'image change à chaque article ? -->
     </div>
 
-<!-- il manque aussi les sous titres jsp si c'est volontaire ?-->
     <section class="article1">
         <div class="container">
             <div class="titre">
