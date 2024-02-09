@@ -31,9 +31,7 @@ sql_connect();
             </div>
             <div class="col img_accueil">
                 <img src="/src/images/Vitrail.webp" alt="Image vitrail" width="482" height="667" class="img_vitrail">
-                <div class="citation">
-                    Photo de <a href="https://unsplash.com/fr/@dre0316?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andre Hunter</a> sur <a href="https://unsplash.com/fr/photos/bouteille-en-verre-bleu-et-marron-vqoKHmMKgOE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                </div>
+                
                 <div class="rond">
                 </div>
             </div>
