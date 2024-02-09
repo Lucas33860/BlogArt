@@ -147,29 +147,33 @@ sql_connect();
                 <div class="col ">
                     <img src="/src/images/Bougies.webp" alt="Photos de plusieurs bougies dans le noir" width="590" height="323" class="img_articles">
                 </div>
+                
                 <div class="col text-end">
                     <h2 class="h_art">Saint Valentin - Un date à l'église: Y avez-vous pensé ?</h2>
-                    <p class="p_art date">Publié le JJ/MM/AAAA par Memoria</p>
+                    <p class="p_art date">Publié le 07/02/2024 par Memoria</p>
                     <p class="p_art">Vous cherchez une activité originale à Bordeaux <br>
                         pour la Saint Valentin ? Et si vous osiez sortir des <br>
                         clichés habituels, pour rendre ce moment unique <br>
                         et inoubliable avec votre moitié.</p>
-                    <a class="btn m-1" href="article1.php?numArt=1" role="button">En savoir plus</a>
+                        <p class="p_art"><a href="https://candlelightexperience.com/fr/" style="text-decoration: none; color: black;">Découvrir Candlelight</a></p>
+                    <a class="btn m-1" href="article1.php?numArt=7" role="button">En savoir plus</a>
                 </div>
             </div>
             <div class="row text-center articles"> <!-- art 2-->
                 <div class="col text-start">
                     <h2 class="h_art">Les 3 secrets des moines dominicains révélés</h2>
-                    <p class="p_art date">Publié le JJ/MM/AAAA par Memoria</p>
+                    <p class="p_art date">Publié le 08/02/2024 par Memoria</p>
                     <p class="p_art">Aujourd'hui le frère Timothée Lagabrielle nous <br>
                         dévoile les secrets qui habitent le couvent de <br>
                         Bordeaux. Mais qui sont réellement les dominicains ?</p>
-                    <a class="btn m-1" href="article1.php?numArt=2" role="button">En savoir plus</a>
+                    <a class="btn m-1" href="article1.php?numArt=8" role="button">En savoir plus</a>
                 </div>
                 <div class="col">
                     <a href="https://youtu.be/A9ja_xLTrZk">
                         <img src="/src/images/Frr.webp" alt="Photo du frère dominicain Timothée Lagabrielle" width="590" height="323" class="img_articles">
                     </a>
+                    <p class="p_art">Voir l'<a href="https://youtu.be/A9ja_xLTrZk" style="text-decoration: none; color: black;">interview</a></p>
+
 
                 </div>
             </div>
@@ -186,6 +190,8 @@ sql_connect();
                 absolue, fusionne des styles variés et singuliers. Ainsi,<br>
                 chacun peut savourer la majesté des églises, quelle qu'en soit la raison.
                 </p>
+                <p class="p_boite2"><a href="https://www.tripadvisor.fr/Attractions-g187079-Activities-c47-t175-Bordeaux_Gironde_Nouvelle_Aquitaine.html" style="text-decoration: none; color: white;">Découvrir les églises</a></p>
+                
             </div>
             <div class="col">
                 <img src="/src/images/Images_Carrés.svg" alt="Petites images églises carrées" width="600" height="400">
