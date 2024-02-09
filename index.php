@@ -20,12 +20,11 @@ sql_connect();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
 
-
 </head>
 
 <body>
     <!-- 1e page -->
-    <div class="container text-center titre">
+    <div class="container text-center titre_acc">
         <div class="row">
             <div class="col logo">
                 <img src="/src/images/LogoMemoriaBlack.svg" alt="Logo" width="786" height="184"
@@ -53,10 +52,11 @@ sql_connect();
                 </div>
                 <div class="col">
                     <h2 class="titre_boite"> MEMORIA C'EST QUOI ?</h2>
-                    <p class="p_boite">Lorem ipsum dolor sit amet consectetur. Leo cum vel neque <br>
-                        lectus. Ultrices felis neque feugiat tellus hendrerit dolor <br>
-                        ullamcorper cursus consequat. Venenatis diam hac sollicitudin <br>
-                        diam nec quis. Consectetur enim magna amet gravida eget vivamus semper metus.</p>
+                    <p class="p_boite">Memoria met en lumière la richesse du patrimoine <br>
+                    ecclésiastique bordelais. Au travers de nos articles, <br>
+                    abordez un nouvel angle de découverte de la ville. <br>
+                    Articles historiques, témoignages et événements phares, <br>
+                    découvrez Memoria !</p>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@ sql_connect();
         <div class="ST text-center"> <!-- sous titre 1-->
             <h2> LES NEWS </h2>
         </div>
-        <div class="row text-center justify-content-center">
+        <div class="row text-center justify-content-center ">
             <div class="col">
                 <img src="/src/images/News1.webp" alt="Image" width="250" height="250" class="img_news">
                 <h2 class="h_news">Le diocèse de Bordeaux se réorganise</h2>
@@ -85,7 +85,7 @@ sql_connect();
             </div>
             <div class="col">
                 <img src="/src/images/News3.webp" alt="Image" width="250" height="250" class="img_news">
-                <h2 class="h_news">Les murs de la Cathédrale Sainte André</h2>
+                <h2 class="h_news">Les murs de la Cathédrale <br> Sainte André</h2>
                 <p class="p_news">Le mariage d’Aliénor <br>
                     d’Aquitaine et de Louis VII, <br>
                     le futur roi de France <br>
@@ -100,26 +100,54 @@ sql_connect();
         </div>
         <div class="row text-center">
             <div class="col chiffres">
-                <div id="value">80</div>
-                <p class="p_chifrres">chiffres</p>
+                <div id="value">34</div>
+                <p class="p_chifrres">églises à Bordeaux</p>
             </div>
             <div class="col chiffres">
-                <div id="value">1920</div>
-                <p class="p_chifrres">chiffres</p>
+                <p class="p_chifrres">Depuis le</p>
+                <div id="value">XIe siècle</div>
+                
             </div>
             <div class="col chiffres">
-                <div id="value">65</div>
-                <p class="p_chifrres">chiffres</p>
+                <div id="value">40
+                </div>
+                <p class="p_chifrres">bâtiments historiques</p>
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var fadeInElements = document.querySelectorAll('.articles');
+
+            var options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Le seuil à partir duquel l'élément doit être visible pour déclencher l'animation
+            };
+
+            var fadeInObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            fadeInElements.forEach(function(element) {
+                fadeInObserver.observe(element);
+            });
+        });
+    </script>
+
 
     <div class="container">
         <div class="ST text-center"> <!-- sous titre 3-->
             <h2 id="article">LES ARTICLES</h2>
         </div>
         <div class="articles">
-            <div class="row text-center article1"> <!-- art 1-->
+            <div id="fadeIn" class="row text-center articles"> <!-- art 1-->
                 <div class="col ">
                     <img src="/src/images/Bougies.webp" alt="Photos de plusieurs bougies dans le noir" width="590" height="323"
                         class="img_articles">
@@ -134,7 +162,7 @@ sql_connect();
                     <a class="btn m-1" href="article1.php?numArt=1" role="button">En savoir plus</a>
                 </div>
             </div>
-            <div class="row text-center article2"> <!-- art 2-->
+            <div class="row text-center articles"> <!-- art 2-->
                 <div class="col text-start">
                     <h2 class="h_art">Les 3 secrets des moines dominicains révélés</h2>
                     <p class="p_art date">Publié le JJ/MM/AAAA par Memoria</p>
@@ -155,10 +183,12 @@ sql_connect();
         <div class="row">
             <div class="col">
                 <h2 class="titre_boite2">POURQUOI S'INTÉRESSER AUX ÉGLISES ?</h2>
-                <p class="p_boite2">Lorem ipsum dolor sit amet consectetur. Leo cum vel neque <br>
-                    lectus. Ultrices felis neque feugiat tellus hendrerit dolor <br>
-                    ullamcorper cursus consequat. Venenatis diam hac sollicitudin <br>
-                    diam nec quis. Consectetur enim magna amet gravida eget vivamus semper metus.</p>
+                <p class="p_boite2">Les églises, témoins chargés d'histoire, reflètent le riche<br>
+                patrimoine et l'épopée de la France. Indépendamment des <br>
+                croyances individuelles, leur architecture, d'une beauté<br>
+                absolue, fusionne des styles variés et singuliers. Ainsi,<br>
+                chacun peut savourer la majesté des églises, quelle qu'en soit la raison.
+                </p>
             </div>
             <div class="col">
                 <img src="/src/images/Images_Carrés.svg" alt="Petites images églises carrées" width="600" height="400">

@@ -36,11 +36,21 @@ nav {
     font-family: 'Futura Medium', sans-serif !important;
     font-size: 24 !important;
     box-shadow: 4px 4px 4px #6E6263;
+    transition: transform 0.3s ease;
 }
 
 .btn:hover {
     background-color: #2B2D42;
     color: white;
+    transform: scale(1.1);
+}
+
+.nomNav {
+    transition: transform 0.3s ease;
+}
+
+.nomNav:hover {
+    transform: scale(1.1);
 }
 
 
@@ -57,34 +67,34 @@ nav {
     font-family: 'Futura-Medium', sans-serif !important;
 }
 
-.rond{
+.rond {
     position: absolute;
     left: 55%;
     top: 80%;
-	width:200px;
-	height:200px;
-	background: #A3252F;
-	-webkit-border-radius:100px;
-	-moz-border-radius:100px;
-	-o-border-radius:100px;
-	border-radius:100px;
+    width: 200px;
+    height: 200px;
+    background: #A3252F;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
 }
 
 .arrondi {
     position: absolute;
-    width:600px;
-	height:492px;
-	background: #A3252F;
-	-webkit-border-radius:100px;
-	-moz-border-radius:100px;
-	-o-border-radius:100px;
-	border-radius:0px 400px 0px 0px;
+    width: 600px;
+    height: 492px;
+    background: #A3252F;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 0px 400px 0px 0px;
 }
 
 .img_accueil .citation {
-    position:absolute;
+    position: absolute;
     left: 82%;
-    top : 97%;
+    top: 97%;
     color: white;
     font-family: "Inter", sans-serif;
     font-size: 10px;
@@ -98,7 +108,7 @@ nav {
     margin-top: 17%;
 }
 
-.titre {
+.titre_acc {
     margin-top: 5%;
     margin-bottom: 8%;
 }
@@ -139,6 +149,11 @@ nav {
 .img_news {
     border-radius: 25px;
     box-shadow: 4px 4px 4px #6E6263;
+    transition: transform 0.3s ease;
+}
+
+.img_news:hover {
+    transform: scale(1.1);
 }
 
 .p_news {
@@ -161,7 +176,7 @@ nav {
 
 
 .container4 {
-    background-color: gray;
+background-color: #8D99AE;
     padding: 5%;
     padding-top: 2%;
 }
@@ -169,6 +184,7 @@ nav {
 .ST {
     font-size: 32px;
     font-family: 'Futura-Bold', sans-serif !important;
+
 }
 
 .chiffres {
@@ -182,13 +198,16 @@ nav {
     font-family: 'Inter', sans-serif;
 }
 
-.article1 {
+.articles {
     margin-bottom: 10%;
+    opacity: 0; 
+    transition: opacity 1s ease;
 }
 
-.article2 {
-    margin-bottom: 10%;
-}
+.articles.active {
+        opacity: 1; 
+    }
+
 
 .article3 {
     margin-bottom: 5%;
@@ -199,6 +218,8 @@ nav {
     box-shadow: 4px 4px 4px #6E6263;
 }
 
+
+
 .container5 {
     margin-top: 5%;
     padding: 6%;
@@ -208,30 +229,30 @@ nav {
 
 }
 
-.rond2{
+.rond2 {
     position: absolute;
     left: 85%;
     top: 465%;
-	width:150px;
-	height:150px;
-	background: #A3252F;
-	-webkit-border-radius:100px;
-	-moz-border-radius:100px;
-	-o-border-radius:100px;
-	border-radius:100px;
+    width: 150px;
+    height: 150px;
+    background: #A3252F;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
 }
 
-.rond3{
+.rond3 {
     position: absolute;
     left: 55%;
     top: 515%;
-	width:90px;
-	height:90px;
-	background: #A3252F;
-	-webkit-border-radius:100px;
-	-moz-border-radius:100px;
-	-o-border-radius:100px;
-	border-radius:100px;
+    width: 90px;
+    height: 90px;
+    background: #A3252F;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
 }
 
 .titre_boite2 {
@@ -270,7 +291,7 @@ nav {
 
 .date {
     font-size: 20px;
-    color: grey; 
+    color: grey;
     margin-bottom: 3%;
 }
 
@@ -296,9 +317,9 @@ nav {
 }
 
 .p_MLfooter {
-    color: white;
+    color: rgb(210, 210, 210);
     font-family: 'Futura-Medium', sans-serif !important;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .li_footer {
@@ -317,7 +338,7 @@ nav {
     margin-bottom: 5%;
 }
 
-.img_hautdepage{
+.img_hautdepage {
     width: 100%;
     object-fit: cover;
 }
@@ -331,7 +352,7 @@ nav {
     display: inline-block;
     color: #000;
     font-size: 20px;
-    font-family: 'Futura-Medium', sans-serif ;
+    font-family: 'Futura-Medium', sans-serif;
 }
 
 .chemin1 a {
@@ -359,20 +380,20 @@ nav {
 .titre_contact {
     margin: 4%;
     font-size: 48px;
-    font-family: "Futura-Bold" , sans-serif;
+    font-family: "Futura-Bold", sans-serif;
     margin-bottom: 10%;
 }
 
 .h3_contact {
     font-size: 32px;
-    font-family: "Futura-Bold" , sans-serif; 
+    font-family: "Futura-Bold", sans-serif;
     margin-bottom: 10%;
 }
 
 .p_contact {
     font-size: 24px;
-    font-family: "Futura-Medium" , sans-serif;
-    margin-bottom: 7%; 
+    font-family: "Futura-Medium", sans-serif;
+    margin-bottom: 7%;
 }
 
 .carte {
@@ -381,7 +402,7 @@ nav {
 }
 
 .logo_ML {
-margin: 5%;
+    margin: 5%;
 }
 
 .CGU {
@@ -394,7 +415,7 @@ margin: 5%;
 
 .h_ML {
     font-size: 48px;
-    font-family: "Futura-Bold" , sans-serif;
+    font-family: "Futura-Bold", sans-serif;
     margin: 68px;
     margin-bottom: 50px;
 }
@@ -402,7 +423,7 @@ margin: 5%;
 .h_ML2 {
     color: #000;
     font-size: 48px;
-    font-family: "Futura-Bold" , sans-serif;
+    font-family: "Futura-Bold", sans-serif;
     margin: 50px;
 }
 
@@ -417,7 +438,7 @@ margin: 5%;
 
 .p_ML {
     color: #000;
-    font-family: "Inter" , sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     margin: 50px;
     line-height: 70px;
@@ -426,13 +447,59 @@ margin: 5%;
 
 .p_MAJ {
     color: #6E6263;
-    font-family: "Inter" , sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 24px;
-    margin : 50px 50px 50px ; 
+    margin: 50px 50px 50px;
     margin-bottom: 100px;
 }
 
 #carouselExampleFade {
     width: 800px;
     height: 400px;
-    overflow: hidden; }
+    overflow: hidden;
+}
+
+.titre {
+    margin: 5%;
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 48px;
+
+}
+
+.ST_art {
+    margin-top: 2%;
+    font-family: "Futura-Bold", sans-serif;
+    font-size: 24px;
+}
+
+.para1 {
+    margin: 5%;
+    font-family: "Futura-Medium", sans-serif;
+    font-size: 24px;
+    line-height: 200%;
+}
+
+.para2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Futura-Medium", sans-serif;
+    font-size: 24px;
+    line-height: 200%;
+}
+
+.para3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Futura-Medium", sans-serif;
+    font-size: 24px;
+    line-height: 200%;
+}
+
+.para4 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Futura-Medium", sans-serif;
+    font-size: 24px;
+    line-height: 200%;
+    margin-bottom: 10%;
+}

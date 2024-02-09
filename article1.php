@@ -22,6 +22,7 @@ $urlPhotArt = $article[0]["urlPhotArt"];
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,39 +30,69 @@ $urlPhotArt = $article[0]["urlPhotArt"];
 </head>
 
 <body>
-        <section class="article1">
-            <div class="container">
-                <div class="titre">
-                    <h1><?php echo $libTitrArt; ?></h1>
-                </div>
 
-                <div class="para1">
-                    <p><?php echo $libChapoArt; ?></p>
-                </div>
-                <br>
-                <div class="para2">
-                    <h2><?php echo $libAccrochArt; ?></h2>
-                    <br>
-                    <p><?php echo $parag1Art; ?></p>
-                </div>
-                <br>
-                <div class="para3">
-                    <h2><?php echo $libSsTitr1Art; ?></h2>
-                    <br>
-                    <div class="para_img">
-                        <img src="<?php echo "../../../src/uploads/" . $urlPhotArt; ?>" width="300" alt="photo de l'évènement">
-                        <p><?php echo $parag2Art; ?></p>
-                    </div>
-                </div>
-                <br>
-                <div class="para4">
-                    <h2><?php echo $libSsTitr2Art; ?></h2>
-                    <br>
-                    <p><?php echo $parag3Art; ?></p>
+    <!-- je peux rajouter le chemin aussi mais je suis pas sure-->
+    <div>
+        <img src="/src/images/Cathedral2.webp" alt="Image cathédrale" width="1440px" height="270px"
+            class="img_hautdepage">
+        <!--est-ce qu'ici je met une balise php pour que l'image change à chaque article ? -->
+    </div>
 
-                    <p><?php echo $libConclArt; ?></p>
+<!-- il manque aussi les sous titres jsp si c'est volontaire ?-->
+    <section class="article1">
+        <div class="container">
+            <div class="titre">
+                <h1 class ="ST_art"> <!-- j'ai rajouté une class ST_art pour les sous-titres-->
+                    <?php echo $libTitrArt; ?>
+                </h1>
+            </div>
+
+            <div class="para1">
+                <p>
+                    <?php echo $libChapoArt; ?>
+                </p>
+            </div>
+            <br>
+            <div class="para2">
+                <h2 class ="ST_art">
+                    <?php echo $libAccrochArt; ?>
+                </h2>
+                <br>
+                <p>
+                    <?php echo $parag1Art; ?>
+                </p>
+            </div>
+            <br>
+            <div class="para3">
+                <h2 class ="ST_art">
+                    <?php echo $libSsTitr1Art; ?>
+                </h2>
+                <br>
+                <div class="para_img">
+                    <img src="<?php echo "../../../src/uploads/" . $urlPhotArt; ?>" width="300"
+                        alt="photo de l'évènement">
+                    <p>
+                        <?php echo $parag2Art; ?>
+                    </p>
                 </div>
-    </body>
+            </div>
+            <br>
+            <div class="para4">
+                <h2 class ="ST_art">
+                    <?php echo $libSsTitr2Art; ?>
+                </h2>
+                <br>
+                <p>
+                    <?php echo $parag3Art; ?>
+                </p>
+
+                <p>
+                    <?php echo $libConclArt; ?>
+                </p>
+            </div>
+        </div>
+</body>
 
 </html>
+
 <?php require_once "footer.php" ?>

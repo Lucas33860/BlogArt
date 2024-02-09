@@ -26,7 +26,7 @@ session_start();
 ?>
 
 <body>
-  <nav class="navbar navbar-expand-lg my-navbar ">
+  <nav class="navbar navbar-expand-lg my-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">
         <img src="/src/images/LogoBlack.svg" alt="Logo" width="55" height="40" class="d-inline-block align-text-top">
@@ -37,14 +37,14 @@ session_start();
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../../../index.php">ACCUEIL</a>
+            <a class="nav-link active nomNav" aria-current="page" href="../../../index.php">ACCUEIL</a>
           </li>
           <li class="nav-item">
           
-            <a  class="nav-link active" aria-current="page" href="#article">ARTICLES</a>
+            <a  class="nav-link active nomNav" aria-current="page" href="#article">ARTICLES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../../../contact.php">CONTACT</a>
+            <a class="nav-link active nomNav" aria-current="page" href="../../../contact.php">CONTACT</a>
           </li>
           <?php 
           if (isset($_SESSION['logged']) && isset($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {
@@ -60,7 +60,7 @@ session_start();
       <div class="d-flex">
         <?php
         if (isset($_SESSION['logged']) && $_SESSION['logged'] === true) {
-          echo '<a class="btn btn-danger m-1" href="/api/security/logout.php" role="button">Déconnexion</a>';
+          echo '<a class="btn m-1" href="/api/security/logout.php" role="button">Déconnexion</a>';
         } else {
           echo '<a class="btn m-1" href="/views/backend/security/login.php" role="button">Connexion</a>';
         }
@@ -72,3 +72,4 @@ session_start();
       </div>
     </div>
   </nav>
+</body>
