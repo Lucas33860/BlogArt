@@ -30,7 +30,7 @@ $statuts = sql_select('STATUT', '*');
                 <div class="form-group">
                     <label for="passMemb1">Mot de passe</label>
                     <input id="passMemb1" name="passMemb1" class="form-control" type="password" autofocus="autofocus">
-                    <small id="passHelp" class="form-text text-muted">(Entre 8 et 15 caractères, au moins une majuscule, une minuscule, un chiffre, caractères spéciaux acceptés)</small>
+                    <small id="passHelp" class="form-text text-muted">Entre 8 et 15 caractères, 1 majuscule, 1 mimnuscule et # @ ? ou !</small>
                 </div>
                 <div class="form-group">
                     <input type="checkbox" id="visuMdp1" name="visuMdp" onchange="togglePasswordVisibility('passMemb1', 'visuMdp1')">
@@ -58,7 +58,7 @@ $statuts = sql_select('STATUT', '*');
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="accord">J'accepte que mes données soient collectées et stockées.</label><br>
+                    <label for="accord">J'accepte que mes données soient utilisées.</label><br>
                     <input type="radio" id="oui" name="accordMemb" value="1">
                     <label for="accordMemb">Oui</label><br>
                     <input type="radio" id="non" name="accordMemb" value="0" checked>
@@ -78,13 +78,14 @@ $statuts = sql_select('STATUT', '*');
                 </div>
                 <br>
                 <div class="form-group mt-2">
-                    <button type="submit" data-sitekey="6LdDn2spAAAAAOoAFhJy8PbBsnjgAjBO20DDz_r4" data-callback='onSubmit'class="g-recapchat">Créer un compte</button>
+                    <!--Capchat-->
+                    <button class="btn m-1" type="submit" data-sitekey="6LdDn2spAAAAAOoAFhJy8PbBsnjgAjBO20DDz_r4" data-callback='onSubmit' class="g-recapchat">Créer un compte</button>
                 </div>
                 <br>
                 <p>Vous avez déjà un compte ? <a href=<?php echo $_SERVER['HTTP_REFERER'] ?>>Connectez vous</a></p>
-                
-                <!--Capchat-->
-                
+
+
+
 
             </form>
         </div>

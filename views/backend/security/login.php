@@ -1,7 +1,9 @@
 <?php
 include '../../../header.php';
 
+
 ?>
+
 
 <div class="container">
     <div class="row">
@@ -28,7 +30,7 @@ include '../../../header.php';
                     <button type="submit" class="btn btn-primary">Se connecter</button>
                 </div>
             </form>
-            <p>Pas encore de compte ? <a href="../members/create.php">Inscrivez vous</a></p>
+            <p>Nouveau sur Memoria ? <a href="../members/create.php">S'inscrire</a></p>
         </div>
     </div>
 </div>

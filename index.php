@@ -12,8 +12,7 @@ sql_connect();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOGART Accueil</title>
     <!-- Bootstrap CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,14 +26,13 @@ sql_connect();
     <div class="container text-center titre_acc">
         <div class="row">
             <div class="col logo">
-                <img src="/src/images/LogoMemoriaBlack.svg" alt="Logo" width="786" height="184"
-                    class="d-inline-block align-text-top">
+                <img src="/src/images/LogoMemoriaBlack.svg" alt="Logo" width="786" height="184" class="d-inline-block align-text-top">
                 <h1 class="slogan">LES EGLISES AUTREMENT</h1>
             </div>
             <div class="col img_accueil">
                 <img src="/src/images/Vitrail.webp" alt="Image vitrail" width="482" height="667" class="img_vitrail">
                 <div class="citation">
-                Photo de <a href="https://unsplash.com/fr/@dre0316?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andre Hunter</a> sur <a href="https://unsplash.com/fr/photos/bouteille-en-verre-bleu-et-marron-vqoKHmMKgOE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    Photo de <a href="https://unsplash.com/fr/@dre0316?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andre Hunter</a> sur <a href="https://unsplash.com/fr/photos/bouteille-en-verre-bleu-et-marron-vqoKHmMKgOE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                 </div>
                 <div class="rond">
                 </div>
@@ -149,8 +147,7 @@ sql_connect();
         <div class="articles">
             <div id="fadeIn" class="row text-center articles"> <!-- art 1-->
                 <div class="col ">
-                    <img src="/src/images/Bougies.webp" alt="Photos de plusieurs bougies dans le noir" width="590" height="323"
-                        class="img_articles">
+                    <img src="/src/images/Bougies.webp" alt="Photos de plusieurs bougies dans le noir" width="590" height="323" class="img_articles">
                 </div>
                 <div class="col text-end">
                     <h2 class="h_art">Saint Valentin - Un date à l'église: Y avez-vous pensé ?</h2>
@@ -172,8 +169,10 @@ sql_connect();
                     <a class="btn m-1" href="article1.php?numArt=2" role="button">En savoir plus</a>
                 </div>
                 <div class="col">
-                    <img src="/src/images/Frr.webp" alt="Photo du frère dominicain Timothée Lagabrielle" width="590" height="323"
-                        class="img_articles">
+                    <a href="https://youtu.be/A9ja_xLTrZk">
+                        <img src="/src/images/Frr.webp" alt="Photo du frère dominicain Timothée Lagabrielle" width="590" height="323" class="img_articles">
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -219,13 +218,11 @@ sql_connect();
                         <img src="/src/images/ste-croix.webp" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
