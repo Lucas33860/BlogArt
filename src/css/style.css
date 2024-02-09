@@ -67,29 +67,20 @@ nav {
     font-family: 'Futura-Medium', sans-serif !important;
 }
 
+.img_accueil {
+    position: relative;
+}
+
 .rond {
     position: absolute;
-    left: 55%;
+    left: -7%;
     top: 80%;
     width: 200px;
     height: 200px;
     background: #A3252F;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
-.arrondi {
-    position: absolute;
-    width: 600px;
-    height: 492px;
-    background: #A3252F;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 0px 400px 0px 0px;
-}
 
 .img_accueil .citation {
     position: absolute;
@@ -113,7 +104,10 @@ nav {
     margin-bottom: 8%;
 }
 
+
+
 .container2 {
+    position: relative;
     margin-top: 10%;
     padding: 7%;
     padding-left: 7%;
@@ -122,6 +116,15 @@ nav {
 
 }
 
+.arrondi {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 600px;
+    height: 492px;
+    background: #A3252F;
+    border-radius: 0% 80% 0% 0%;
+}
 .titre_boite {
     color: white;
     font-family: "Futura-Bold", sans-serif !important;
@@ -229,31 +232,29 @@ background-color: #8D99AE;
 
 }
 
+.rond_img {
+position: relative;
+}
 .rond2 {
     position: absolute;
-    left: 85%;
-    top: 465%;
+    left: 72%;
+    top: -5%;
     width: 150px;
     height: 150px;
     background: #A3252F;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 .rond3 {
     position: absolute;
-    left: 55%;
-    top: 515%;
+    left: 10%;
+    top: 75%;
     width: 90px;
     height: 90px;
     background: #A3252F;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
+    border-radius: 50%;
 }
+
 
 .titre_boite2 {
     margin-left: 7%;
@@ -459,17 +460,27 @@ background-color: #8D99AE;
     overflow: hidden;
 }
 
-.titre {
+
+
+.T_art {
     margin: 5%;
     font-family: "Futura-Bold", sans-serif;
     font-size: 48px;
-
 }
 
 .ST_art {
     margin-top: 2%;
     font-family: "Futura-Bold", sans-serif;
     font-size: 24px;
+}
+
+.para_img{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_art {
+align-self: center;
 }
 
 .para1 {

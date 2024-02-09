@@ -12,7 +12,8 @@ sql_connect();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOGART Accueil</title>
     <!-- Bootstrap CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,14 +27,12 @@ sql_connect();
     <div class="container text-center titre_acc">
         <div class="row">
             <div class="col logo">
-                <img src="/src/images/LogoMemoriaBlack.svg" alt="Logo" width="786" height="184" class="d-inline-block align-text-top">
+                <img src="/src/images/LogoMemoriaBlack.svg" alt="Logo" width="786" height="184"
+                    class="d-inline-block align-text-top">
                 <h1 class="slogan">LES EGLISES AUTREMENT</h1>
             </div>
             <div class="col img_accueil">
                 <img src="/src/images/Vitrail.webp" alt="Image vitrail" width="482" height="667" class="img_vitrail">
-                <div class="citation">
-                    Photo de <a href="https://unsplash.com/fr/@dre0316?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andre Hunter</a> sur <a href="https://unsplash.com/fr/photos/bouteille-en-verre-bleu-et-marron-vqoKHmMKgOE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                </div>
                 <div class="rond">
                 </div>
             </div>
@@ -42,19 +41,20 @@ sql_connect();
 
 
     <div>
-        <div class="arrondi">
-        </div>
+
         <div class="container2">
             <div class="row">
                 <div class="col">
+                    <div class="arrondi">
+                    </div>
                 </div>
                 <div class="col">
                     <h2 class="titre_boite"> MEMORIA C'EST QUOI ?</h2>
                     <p class="p_boite">Memoria met en lumière la richesse du patrimoine <br>
-                    ecclésiastique bordelais. Au travers de nos articles, <br>
-                    abordez un nouvel angle de découverte de la ville. <br>
-                    Articles historiques, témoignages et événements phares, <br>
-                    découvrez Memoria !</p>
+                        ecclésiastique bordelais. Au travers de nos articles, <br>
+                        abordez un nouvel angle de découverte de la ville. <br>
+                        Articles historiques, témoignages et événements phares, <br>
+                        découvrez Memoria !</p>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@ sql_connect();
             <div class="col chiffres">
                 <p class="p_chifrres">Depuis le</p>
                 <div id="value">XIe siècle</div>
-                
+
             </div>
             <div class="col chiffres">
                 <div id="value">40
@@ -115,7 +115,7 @@ sql_connect();
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var fadeInElements = document.querySelectorAll('.articles');
 
             var options = {
@@ -124,8 +124,8 @@ sql_connect();
                 threshold: 0.5 // Le seuil à partir duquel l'élément doit être visible pour déclencher l'animation
             };
 
-            var fadeInObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(entry) {
+            var fadeInObserver = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
                         fadeInObserver.unobserve(entry.target);
@@ -133,7 +133,7 @@ sql_connect();
                 });
             }, options);
 
-            fadeInElements.forEach(function(element) {
+            fadeInElements.forEach(function (element) {
                 fadeInObserver.observe(element);
             });
         });
@@ -147,7 +147,8 @@ sql_connect();
         <div class="articles">
             <div id="fadeIn" class="row text-center articles"> <!-- art 1-->
                 <div class="col ">
-                    <img src="/src/images/Bougies.webp" alt="Photos de plusieurs bougies dans le noir" width="590" height="323" class="img_articles">
+                    <img src="/src/images/Bougies.webp" alt="Photos de plusieurs bougies dans le noir" width="590"
+                        height="323" class="img_articles">
                 </div>
                 <div class="col text-end">
                     <h2 class="h_art">Saint Valentin - Un date à l'église: Y avez-vous pensé ?</h2>
@@ -170,7 +171,8 @@ sql_connect();
                 </div>
                 <div class="col">
                     <a href="https://youtu.be/A9ja_xLTrZk">
-                        <img src="/src/images/Frr.webp" alt="Photo du frère dominicain Timothée Lagabrielle" width="590" height="323" class="img_articles">
+                        <img src="/src/images/Frr.webp" alt="Photo du frère dominicain Timothée Lagabrielle" width="590"
+                            height="323" class="img_articles">
                     </a>
 
                 </div>
@@ -183,26 +185,23 @@ sql_connect();
             <div class="col">
                 <h2 class="titre_boite2">POURQUOI S'INTÉRESSER AUX ÉGLISES ?</h2>
                 <p class="p_boite2">Les églises, témoins chargés d'histoire, reflètent le riche<br>
-                patrimoine et l'épopée de la France. Indépendamment des <br>
-                croyances individuelles, leur architecture, d'une beauté<br>
-                absolue, fusionne des styles variés et singuliers. Ainsi,<br>
-                chacun peut savourer la majesté des églises, quelle qu'en soit la raison.
+                    patrimoine et l'épopée de la France. Indépendamment des <br>
+                    croyances individuelles, leur architecture, d'une beauté<br>
+                    absolue, fusionne des styles variés et singuliers. Ainsi,<br>
+                    chacun peut savourer la majesté des églises, quelle qu'en soit la raison.
                 </p>
             </div>
-            <div class="col">
-                <img src="/src/images/Images_Carrés.svg" alt="Petites images églises carrées" width="600" height="400">
+            <div class="col rond_img">
+                <img src="/src/images/Images_Carrés.svg" alt="Petites images églises carrées" width="600" height="400"
+                    class="rond_img">
                 <div class="rond2">
                 </div>
                 <div class="rond3">
                 </div>
             </div>
         </div>
-
-        <div class="rond2">
-        </div>
-        <div class="rond3">
-        </div>
     </div>
+
     <div class="container6">
         <div class="ST text-center"> <!-- sous titre 4-->
             <h2>LES ÉGLISES DE BORDEAUX</h2>
@@ -218,11 +217,13 @@ sql_connect();
                         <img src="/src/images/ste-croix.webp" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>

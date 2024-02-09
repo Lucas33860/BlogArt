@@ -42,7 +42,7 @@ $urlPhotArt = $article[0]["urlPhotArt"];
     <section class="article1">
         <div class="container">
             <div class="titre">
-                <h1 class ="ST_art"> <!-- j'ai rajouté une class ST_art pour les sous-titres-->
+                <h1 class ="T_art"> <!-- j'ai rajouté une class ST_art pour les sous-titres-->
                     <?php echo $libTitrArt; ?>
                 </h1>
             </div>
@@ -69,8 +69,7 @@ $urlPhotArt = $article[0]["urlPhotArt"];
                 </h2>
                 <br>
                 <div class="para_img">
-                    <img src="<?php echo "../../../src/uploads/" . $urlPhotArt; ?>" width="300"
-                        alt="photo de l'évènement">
+                    <img src="src/images/Frr.webp" width="300" alt="photo de l'évènement" class = "img_art" >
                     <p>
                         <?php echo $parag2Art; ?>
                     </p>
