@@ -46,4 +46,3 @@ $membre = sql_select("MEMBRE", "*");
     </div>
 </div>
 <?php
-include '../../../footer.php'; // contains the footer
