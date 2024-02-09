@@ -15,6 +15,7 @@ $parag2Art = isset($_POST['parag2Art']) ? ctrlSaisies($_POST['parag2Art']) : '';
 $libSsTitr2Art = isset($_POST['libSsTitr2Art']) ? ctrlSaisies($_POST['libSsTitr2Art']) : '';
 $parag3Art = isset($_POST['parag3Art']) ? ctrlSaisies($_POST['parag3Art']) : '';
 $libConclArt = ctrlSaisies($_POST['libConclArt']);
+$urlPhotArt = isset($_FILES['urlPhotArt']) ? $_FILES['urlPhotArt']['name'] : '';
 $numThem = ctrlSaisies($_POST['numThem']);
 
 if(isset($_FILES['urlPhotArt'])){
