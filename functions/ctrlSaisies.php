@@ -1,8 +1,7 @@
+
 <?php
 //ctrl saisies form avant import bdd
-
-function ctrlSaisies($saisie)
-{
+function ctrlSaisies($saisie){
 
     // Convertion caractères spéciaux en entités HTML => peu performant
     // Préférer htmlentities()
